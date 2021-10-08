@@ -1,0 +1,75 @@
+/***** ATRIUTOS POR DEFECTO *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Monserrat" sans-serif;
+}
+
+/***** BARRA DE NAVEGACION RESPONSIVE *****/
+@media all and (min-width: 375px ){
+  .b-header {
+    background: #0c0d1c;
+    color: white;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .n-container {
+    width: 85%;
+    margin: 0, auto;
+  }
+
+  .logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    letter-spacing: 15px;
+    font-size: 1.5em;
+  }
+
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: .5rem, 1rem;
+  }
+
+  .b-header a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navigation ul {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navigation ul li {
+    display: inline-block;
+  }
+
+  .navigation ul li a {
+    display: block;
+    padding: .5rem 1rem;
+    transition: all 0.4sec linear;
+    border-radius: 5px;
+    font-size: 1.5rem;
+  }
+
+  .navigation ul li a:hover {
+    background: #4a4a4a;
+  }
+}
+/***** End BARRA DE NAVEGACION RESPONSIVE *****/
